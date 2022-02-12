@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+void main()
+{
+    int maths,physics,chemistry,to2,to3;
+    printf("Enter the marks of Maths: ");
+    scanf("%d",&maths);
+    
+    printf("Enter the marks of physics: ");
+    scanf("%d",&physics);
+    
+    printf("Enter the marks of chemistry: ");
+    scanf("%d",&chemistry);
+    
+    to2=maths+physics;
+    to3=maths+physics+chemistry;
+    
+    if(maths >= 65 && physics >= 55 && chemistry >= 50 && to3 >=190 || to2 >= 140)
+        printf("your are eligible");
+    else
+            printf("your are not eligible");
+    
+    
+}
+
+
+

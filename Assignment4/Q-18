@@ -1,0 +1,187 @@
+#include<conio.h>
+#include<stdio.h>
+void unit(int a,int temp1){
+    temp1=a%10;
+     if(temp1 == 1)
+		printf(" one");
+	else if(temp1 == 2)
+		printf(" two");
+	else if(temp1 == 3)
+		printf(" three");
+	else if(temp1 == 4)
+		printf(" four");
+	else if(temp1 == 5)
+		printf(" five");
+	else if(temp1 == 6)
+		printf(" six");
+	else if(temp1 == 7)
+		printf(" seven");
+	else if(temp1 == 8)
+		printf(" eight");
+	else if(temp1 == 9)
+		printf(" nine");
+}
+void tens(int a,int temp1)
+{
+    if(a <=11  && a <= 19)
+    {
+        temp1=a%10;
+        if(temp1 == 1)
+		printf(" eleven");
+	    else if(temp1 == 2)
+		printf(" twelve");
+	    else if(temp1 == 3)
+		printf(" thirteen");
+	    else if(temp1 == 4)
+		printf(" fourteen");
+	    else if(temp1 == 5)
+		printf(" fifteen");
+	    else if(temp1 == 6)
+		printf(" sixteen");
+	    else if(temp1 == 7)
+		printf(" seventeen");
+	    else if(temp1 == 8)
+		printf(" eighteen");
+	    else if(temp1 == 9)
+		printf(" nineteen");    
+    }
+    else if(a == 10 || a >= 20)
+    {
+        temp1=a/10;
+        if(temp1 == 1){
+		printf("ten");
+		unit(a,temp1);}
+	    else if(temp1 == 2){
+		printf("twenty");
+		unit(a,temp1);}
+	    else if(temp1 == 3){
+		printf("thirty");
+		unit(a,temp1);}
+	    else if(temp1 == 4){
+		printf("fourty");
+		unit(a,temp1);}
+	    else if(temp1 == 5){
+		printf("fifty");
+		unit(a,temp1);}
+	    else if(temp1 == 6){
+		printf("sixty");
+		unit(a,temp1);}
+	    else if(temp1 == 7){
+		printf("seventy");
+		unit(a,temp1);}
+	    else if(temp1 == 8){
+		printf("eighty");
+			unit(a,temp1);}
+	    else if(temp1 == 9){
+		printf("ninety");
+			unit(a,temp1);}
+    }
+}
+void main()
+{
+    
+    int a,i,temp2,temp1;
+    printf("\nEnter the number:");
+    scanf("%d",&a);
+    if(a < 10){
+        unit(a,temp1);
+    }
+    else if(9 > a || a <= 99){
+        tens(a,temp1);
+    }
+       
+    else if (a >= 100)
+    {
+        temp2=a/100;
+        if(temp2 == 1){
+		    printf("one hundred ");
+		    a=a-100;
+	        if(a<=9){
+	            unit(a,temp1);    
+		    }
+		    else if(10 >= a || a <= 99){
+                tens(a,temp1);
+            }
+        }
+        else if(temp2 == 2){
+		printf("two hundred ");
+		a=a-200;
+	        if(a<=9){
+	            unit(a,temp1);    
+		    }
+		    else if(10 >= a || a <= 99){
+                tens(a,temp1);
+            }
+		}
+	else if(temp2 == 3){
+		printf("three hundred ");
+		a=a-300;
+	        if(a<=9){
+	            unit(a,temp1);    
+		    }
+		    else if(10 >= a || a <= 99){
+                tens(a,temp1);
+            }
+		}
+	else if(temp2 == 4){
+		printf("four hundred ");
+		a=a-400;
+	        if(a<=9){
+	            unit(a,temp1);    
+		    }
+		    else if(10 >= a || a <= 99){
+                tens(a,temp1);
+            }
+		}
+	else if(temp2 == 5){
+		printf("five hundred ");
+		a=a-500;
+	        if(a<=9){
+	            unit(a,temp1);    
+		    }
+		    else if(10 >= a || a <= 99){
+                tens(a,temp1);
+            }
+		}
+	else if(temp2 == 6){
+		printf("six hundred ");
+		a=a-600;
+	        if(a<=9){
+	            unit(a,temp1);    
+		    }
+		    else if(10 >= a || a <= 99){
+                tens(a,temp1);
+            }
+		}
+	else if(temp2 == 7){
+		printf("seven hundred ");
+		a=a-700;
+	        if(a<=9){
+	            unit(a,temp1);    
+		    }
+		    else if(10 >= a || a <= 99){
+                tens(a,temp1);
+            }
+		}
+	else if(temp2 == 8){
+		printf("eight hundred ");
+		a=a-800;
+	        if(a<=9){
+	            unit(a,temp1);    
+		    }
+		    else if(10 >= a || a <= 99){
+                tens(a,temp1);
+            }
+		}
+	else if(temp2 == 9){
+		printf("nine hundred ");
+		a=a-900;
+	        if(a<=9){
+	            unit(a,temp1);    
+		    }
+		    else if(10 >= a || a <= 99){
+                tens(a,temp1);
+            }
+		}
+    }
+}

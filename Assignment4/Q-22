@@ -1,0 +1,24 @@
+#include<conio.h>
+#include<stdio.h>
+
+void main()
+{
+    
+   int month;
+   
+	printf("enter the month number: ");
+	scanf("%d",&month);
+	
+	if(month % 2 == 0)
+	{
+		if(month == 2)
+			printf("28 or 29 day");
+		else
+			printf("30 days are there");
+	}
+	else
+	{
+		printf("31 days are there");
+	}
+}
+

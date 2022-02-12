@@ -1,0 +1,21 @@
+#include<conio.h>
+#include<stdio.h>
+
+void main()
+{
+	int a,b,c;
+	printf("enter the a sides:- ");
+	scanf("%d",&a);
+	printf("enter the b sides:- ");
+	scanf("%d",&b);
+	printf("enter the c sides:- ");
+	scanf("%d",&c);
+	if(a == b && b == c)
+		printf("equilateral");
+	else if(a == b || b == c || c == a)
+	{
+		printf("isosceles");
+	}
+	else
+		printf("scalene");
+}

@@ -1,0 +1,36 @@
+#include<conio.h>
+#include<stdio.h>
+
+void main()
+{
+    
+   int ch,day;
+   
+	printf("enter the day number: ");
+	scanf("%d",&day);
+	
+	if(day == 0){
+	    
+	    printf("invalid\n");
+	    main();
+	}
+	else
+	    ch = day % 7;
+	   
+	if(ch == 1)
+		printf("Monday");
+	else if(ch == 2)
+		printf("Tuesday");
+	else if(ch == 3)
+		printf("Wednesday");
+	else if(ch == 4)
+		printf("Thursday");
+	else if(ch == 5)
+		printf("Friday");
+	else if(ch == 6)
+		printf("saturday");
+	else 
+		printf("Sunday");
+	
+}
+

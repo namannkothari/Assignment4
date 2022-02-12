@@ -1,0 +1,50 @@
+#include<conio.h>
+#include<stdio.h>
+
+void main()
+{
+    
+    int a,b,ch;
+    printf("\nSelect your choice");
+    printf("\n1.Addition \n2.subtraction \n3.multiplication \n4.division \n");
+    scanf("%d",&ch);
+    
+    if(ch == 1)
+    {
+        printf("Enter the first number: ");
+        scanf("%d",&a);
+        printf("Enter the second number: ");
+        scanf("%d",&b);
+        printf("The Addition of the numbers are: %d",a+b);
+        
+    }
+
+    else if(ch == 2)
+    {
+        printf("Enter the first number: ");
+        scanf("%d",&a);
+        printf("Enter the second number: ");
+        scanf("%d",&b);
+        printf("The subtraction of the numbers are: %d",a-b);
+    }
+    else if(ch == 3)
+    {
+        printf("Enter the first number:");
+        scanf("%d",&a);
+        printf("Enter the second number: ");
+        scanf("%d",&b);
+        printf("The multiplication of the numbers are: %d",a*b);
+    }
+    else if(ch == 4)
+    {
+        printf("Enter the first number:");
+        scanf("%d",&a);
+        printf("Enter the second number: ");
+        scanf("%d",&b);
+        printf("the division of the numbers are: %d",a/b);
+    }
+    else 
+        printf("\n invalid");
+        main();
+}
+

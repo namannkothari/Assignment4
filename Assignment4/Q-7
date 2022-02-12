@@ -1,0 +1,20 @@
+
+#include <stdio.h>
+
+void main()
+{
+    int height;
+    printf("Enter the height: ");
+    scanf("%d",&height);
+   
+    if(height <= 150){
+        printf("user is short");
+    }
+    else if((150 < height) || ( height > 177)){
+        printf("user is average");
+    }
+    else{
+        printf("user is tall");
+    }
+    
+}

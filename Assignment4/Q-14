@@ -1,0 +1,21 @@
+#include<conio.h>
+#include<stdio.h>
+
+void main()
+{
+	int a,b,c;
+
+	printf("enter the triangle angle of a: ");
+	scanf("%d",&a);
+	
+printf("enter the triangle angle of b: ");
+	scanf("%d",&b);
+	
+printf("enter the triangle angle of c: ");
+	scanf("%d",&c);
+	\
+if((a+b+c) == 180)
+		printf("we can make triangle");
+	else
+		printf("can not make triangle");
+}
